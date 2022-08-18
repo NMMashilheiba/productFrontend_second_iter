@@ -24,6 +24,9 @@ const Sidebar = () => {
                 selectedMenu === index ? "menuItem active" : "menuItem"
               }
               key={index}
+              onClick={() => {
+                setSelectedMenu(index);
+              }}
             >
               <item.icon />
               <span>{item.heading}</span>
